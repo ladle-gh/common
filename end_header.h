@@ -1,4 +1,4 @@
-/* It is recommended that ladle/common/defs.h
+/* It is recommended that ladle/common/header.h
  * is included at the beginning of header file */
 
 /* Header guard ignored on purpose to allow
@@ -8,7 +8,9 @@
 #ifdef LADLE_KEEP_HEADER
 #undef LADLE_KEEP_HEADER
 #else
+#ifndef LADLE_COMMON_LIB_H
 #undef export
+#endif
 #undef nonnull
 #undef noexcept
 #undef pure
